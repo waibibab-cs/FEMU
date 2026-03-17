@@ -1,0 +1,21 @@
+[0;1;32m●[0m docker.service - Docker Application Container Engine
+     Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Mon 2026-03-02 17:39:58 CST; 26s ago
+TriggeredBy: [0;1;32m●[0m docker.socket
+       Docs: https://docs.docker.com
+   Main PID: 161090 (dockerd)
+      Tasks: 24
+     Memory: 24.5M
+     CGroup: /system.slice/docker.service
+             └─161090 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+
+3月 02 17:39:56 sds-155.hustaims.org dockerd[161090]: time="2026-03-02T17:39:56.799491450+08:00" level=info msg="Firewalld: docker zone already exists, returning"
+3月 02 17:39:58 sds-155.hustaims.org dockerd[161090]: time="2026-03-02T17:39:58.023150067+08:00" level=info msg="Firewalld: interface docker0 already part of docker zone, returning"
+3月 02 17:39:58 sds-155.hustaims.org dockerd[161090]: time="2026-03-02T17:39:58.521484389+08:00" level=warning msg="Error (Unable to complete atomic operation, key modified) deleting object [endpoint_count dba38445804e5c56e38d9387c333ee827206c5442f6ccb8c43c82ed496006a03], retrying...."
+3月 02 17:39:58 sds-155.hustaims.org dockerd[161090]: time="2026-03-02T17:39:58.858333357+08:00" level=info msg="Loading containers: done."
+3月 02 17:39:58 sds-155.hustaims.org dockerd[161090]: time="2026-03-02T17:39:58.877586868+08:00" level=info msg="Docker daemon" commit=01f442b containerd-snapshotter=false storage-driver=overlay2 version=28.1.1
+3月 02 17:39:58 sds-155.hustaims.org dockerd[161090]: time="2026-03-02T17:39:58.877692712+08:00" level=info msg="Initializing buildkit"
+3月 02 17:39:58 sds-155.hustaims.org dockerd[161090]: time="2026-03-02T17:39:58.918230526+08:00" level=info msg="Completed buildkit initialization"
+3月 02 17:39:58 sds-155.hustaims.org dockerd[161090]: time="2026-03-02T17:39:58.932839650+08:00" level=info msg="Daemon has completed initialization"
+3月 02 17:39:58 sds-155.hustaims.org dockerd[161090]: time="2026-03-02T17:39:58.932954787+08:00" level=info msg="API listen on /run/docker.sock"
+3月 02 17:39:58 sds-155.hustaims.org systemd[1]: Started Docker Application Container Engine.
